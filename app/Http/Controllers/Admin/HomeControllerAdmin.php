@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Site;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class HomeControllerAdmin extends Controller
 {
     //
     public function index(){
-        return view('site.home');
+        return view('admin.home');
     }
 }

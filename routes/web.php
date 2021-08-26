@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Site\HomeController;
-use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Site\HomeControllerSite;
+use App\Http\Controllers\Admin\HomeControllerAdmin;
 
 
 
@@ -18,8 +18,8 @@ use App\Http\Controllers\Admin\HomeController;
 |
 */
 
-Route::get('/', 'Site\HomeController@index');
+Route::get('/', 'Site\HomeControllerSite@index');
 
 Route::prefix('painel')->group(function(){
-    Route::get('/','Admin\HomeController@index');
+    Route::get('/','Admin\HomeControllerAdmin@index');
 });
